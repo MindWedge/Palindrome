@@ -22,5 +22,9 @@ class TestPalindrome(unittest.TestCase):
     def test_false_three_character(self):
         self.assertFalse(is_palindrome("abc"))
 
+    #6 return true for laval
+    def test_true_for_laval(self):
+        self.assertTrue(is_palindrome("laval"))
+
 if __name__ == '__main__':
     unittest.main()
