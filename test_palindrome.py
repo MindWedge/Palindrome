@@ -10,5 +10,9 @@ class TestPalindrome(unittest.TestCase):
     def test_false_empty_string(self):
         self.assertFalse(is_palindrome(""))
 
+    #3 return true with single character
+    def test_true_single_character(self):
+        self.assertTrue(is_palindrome("a"))
+
 if __name__ == '__main__':
     unittest.main()
