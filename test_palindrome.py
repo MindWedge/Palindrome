@@ -29,6 +29,10 @@ class TestPalindrome(unittest.TestCase):
     #7 return false for toronto
     def test_true_for_toronto(self):
         self.assertFalse(is_palindrome("toronto"))
+        
+    #8 return true for string
+    def test_true_for_string(self):
+        self.assertTrue(is_palindrome("Able was I ere I saw Elba"))
 
 if __name__ == '__main__':
     unittest.main()
