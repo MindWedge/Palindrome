@@ -18,5 +18,9 @@ class TestPalindrome(unittest.TestCase):
     def test_true_two_character(self):
         self.assertTrue(is_palindrome("bb"))
 
+    #5 return false with three character
+    def test_false_three_character(self):
+        self.assertFalse(is_palindrome("abc"))
+
 if __name__ == '__main__':
     unittest.main()
