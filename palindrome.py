@@ -15,4 +15,11 @@ def is_palindrome(word):
     if len(word) == 2 and word[0]==word[1]:
         return True
         
+    dq = deque(word)
+
+    # checking the characters from the beginning and last
+    while len(dq)>2:
+        if(dq.popleft().lower())!= dq.pop().lower():
+            return False
+        
     return True
