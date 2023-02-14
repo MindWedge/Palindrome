@@ -6,5 +6,9 @@ def is_palindrome(word):
 	# checking length to be sure more then zero
     if len(word) ==  0:
         return False
+    
+    # checking length to be sure more then one
+    if len(word) == 1:
+        return True
         
     return True
