@@ -14,5 +14,9 @@ class TestPalindrome(unittest.TestCase):
     def test_true_single_character(self):
         self.assertTrue(is_palindrome("a"))
 
+    #4 return true with two character
+    def test_true_two_character(self):
+        self.assertTrue(is_palindrome("bb"))
+
 if __name__ == '__main__':
     unittest.main()
