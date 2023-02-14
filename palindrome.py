@@ -10,5 +10,9 @@ def is_palindrome(word):
     # checking length to be sure more then one
     if len(word) == 1:
         return True
+    
+    # checking length is 2 and both characters the same
+    if len(word) == 2 and word[0]==word[1]:
+        return True
         
     return True
