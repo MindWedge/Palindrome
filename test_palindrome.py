@@ -25,6 +25,10 @@ class TestPalindrome(unittest.TestCase):
     #6 return true for laval
     def test_true_for_laval(self):
         self.assertTrue(is_palindrome("laval"))
+        
+    #7 return false for toronto
+    def test_true_for_toronto(self):
+        self.assertFalse(is_palindrome("toronto"))
 
 if __name__ == '__main__':
     unittest.main()
